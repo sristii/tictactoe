@@ -1,0 +1,99 @@
+body {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: #dedbd2;
+}
+
+h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        font-size: 50px;
+        margin: 2px;
+        font-weight: 600;
+        color: #edafb8; 
+        letter-spacing: 3px; 
+        text-shadow: 8px 8px 8px #b0c4b1;
+      }
+      
+
+#GameBoard {
+        display: grid; 
+        grid-template-columns: repeat(3, 90px);
+        grid-gap: 2px; 
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+
+.square {
+        width: 75px;
+        height: 75px;
+        margin: 10px;
+        margin-right: 15px;
+        flex-basis: 33.333333%;
+        background-color: #b0c4b1; 
+        border: none;
+        color: #f7e1d7;
+        font-size: 25px; 
+        font-weight: bold;
+        transition:  transform 0.2s, background-color 0.5s; 
+        outline: none; 
+}
+
+.square:hover {
+        background-color: #edafb8; 
+        color: #fff;
+        transform: scale(1.05); 
+        outline: #b0c4b1;
+        cursor: pointer;
+        outline-width: 2px;
+      }
+
+      #turn {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 35px;
+        font-weight: 600;
+        color: #98af99;
+        letter-spacing: 2px;
+        margin: 15px;
+      }
+      
+      #winner {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 600;
+        color: #edafb8;
+        letter-spacing: 2px;
+        margin: 15px;
+      }
+      
+
+#restart {
+        width: 200px;
+        height: 80px;
+        margin: 15px;
+        background-color: #b0c4b1;
+        outline: none;
+        border: none;
+        font-size: 25px; 
+        font-weight: bold;
+        color: #f7e1d7;
+
+}
+
+
+#restart:hover {
+        width: 200px;
+        height: 80px;
+        margin: 15px;
+        background-color: #ffe3e7;
+        outline: none;
+        border: none;
+        font-size: 25px; 
+        font-weight: bold;
+        color: #8ca78d;
+        cursor: pointer;
+        transition:  transform 0.2s, background-color 0.5s; 
+
+}
